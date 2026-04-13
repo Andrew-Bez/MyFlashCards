@@ -1,0 +1,35 @@
+@use '../base/variables' as *;
+
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 20px;
+
+	padding: 30px 20px;
+	width: max-content;
+
+	background-color: $bg-panel;
+	border-radius: 25px;
+
+	&__item {
+		display: flex;
+		flex-direction: row;
+		justify-content: left;
+		align-items: center;
+		gap: 10px;
+
+		width: 100%;
+		padding: 10px 20px;
+
+		color: $accent-purple;
+		background-color: $bg-main;
+
+		border-radius: 25px;
+		&-active {
+			color: $accent-pink;
+			border: 1px solid $accent-pink;
+		}
+	}
+}
