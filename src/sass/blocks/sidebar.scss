@@ -1,35 +1,48 @@
 @use '../base/variables' as *;
 
 .sidebar {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	gap: 20px;
-
-	padding: 30px 20px;
-	width: max-content;
+	width: 280px;
+	flex-shrink: 0;
+	padding: 32px 20px;
 
 	background-color: $bg-panel;
-	border-radius: 25px;
+	border-radius: 28px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 
 	&__item {
 		display: flex;
-		flex-direction: row;
-		justify-content: left;
 		align-items: center;
-		gap: 10px;
+		gap: 14px;
 
 		width: 100%;
-		padding: 10px 20px;
+		padding: 14px 20px;
 
-		color: $accent-purple;
-		background-color: $bg-main;
+		color: $text-primary;
+		font-size: 15px;
+		font-weight: 500;
+		text-decoration: none;
 
-		border-radius: 25px;
+		border-radius: 20px;
+		transition: all 0.25s ease;
+		&:hover {
+			background-color: rgba($accent-purple, 0.1);
+		}
+		svg {
+			width: 26px;
+			height: 26px;
+			stroke: currentColor;
+		}
 		&-active {
+			background-color: rgba($accent-pink, 0.15);
 			color: $accent-pink;
-			border: 1px solid $accent-pink;
+			box-shadow: 0 0 0 2px rgba($accent-pink, 0.3);
+			svg {
+				stroke: $accent-pink;
+			}
 		}
 	}
 }
