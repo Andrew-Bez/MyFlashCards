@@ -4,7 +4,12 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vocab Voyage</title>
-		<link rel="stylesheet" href="./sass/style.scss" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<div class="app">
@@ -30,7 +35,7 @@
 						<rect x="3" y="14" width="7" height="7" rx="2"></rect>
 						<rect x="14" y="14" width="7" height="7" rx="2"></rect>
 					</svg>
-					<span>Dashboard</span>
+					<span class="title-sm">Dashboard</span>
 				</a>
 				<a href="#" class="sidebar__item" data-tab="myWords">
 					<svg
@@ -52,7 +57,7 @@
 						<line x1="16" y1="17" x2="8" y2="17"></line>
 						<line x1="10" y1="9" x2="8" y2="9"></line>
 					</svg>
-					<span>My Words</span>
+					<span class="title-sm">My Words</span>
 				</a>
 				<a href="#" class="sidebar__item" data-tab="addWord">
 					<svg
@@ -70,7 +75,7 @@
 						<line x1="12" y1="8" x2="12" y2="16"></line>
 						<line x1="8" y1="12" x2="16" y2="12"></line>
 					</svg>
-					<span>Add Word</span>
+					<span class="title-sm">Add Word</span>
 				</a>
 				<a href="#" class="sidebar__item" data-tab="study">
 					<svg
@@ -88,7 +93,7 @@
 						<path d="M2 17l10 5 10-5"></path>
 						<path d="M2 12l10 5 10-5"></path>
 					</svg>
-					<span>Study</span>
+					<span class="title-sm">Study</span>
 				</a>
 				<a href="#" class="sidebar__item" data-tab="settings">
 					<svg
@@ -107,17 +112,55 @@
 							d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.93l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.2-1.17.53-1.69.93l-2.49-1c-.22-.08-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.93l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.2 1.17-.53 1.69-.93l2.49 1c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z"
 						></path>
 					</svg>
-					<span>Settings</span>
+					<span class="title-sm">Settings</span>
 				</a>
 			</nav>
 
 			<main class="main-content">
-				<section
-					id="dashboard"
-					class="dashboard tab-content tab-content-active"
-				></section>
+				<section id="dashboard" class="dashboard tab-content">
+					<div class="dashboard__welcome card">
+						<h2 class="title-md">Hello Andrew!!!</h2>
+						<p class="text-md">Welcome back to your learning journey</p>
+					</div>
+					<div class="dashboard__streak card">
+						<div class="text-lg">
+							<span class="num-md">150 -</span> Words learned!
+						</div>
+						<div class="text-lg">
+							<span class="num-md">5 -</span> Days streak
+						</div>
+					</div>
+					<div class="dashboard__cards">
+						<div class="dashboard__words card">
+							<h2>Your strike</h2>
+						</div>
+						<div class="dashboard__progress card">
+							<h2>Study progress</h2>
+						</div>
+					</div>
+				</section>
 
-				<section id="myWords" class="tab-content"></section>
+				<section id="words" class="words tab-content">
+					<input
+						class="words__input card"
+						type="text"
+						placeholder="Search words... "
+					/>
+					<ul class="words__list card">
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+						<li class="words__item">Hello / Привіт</li>
+					</ul>
+				</section>
 
 				<section id="addWord" class="tab-content"></section>
 

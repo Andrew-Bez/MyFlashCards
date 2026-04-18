@@ -1,0 +1,44 @@
+@use '../base/variables' as *;
+
+.title {
+	&-sm {
+		font-weight: 600;
+		font-size: 20px;
+	}
+	&-md {
+		font-weight: 600;
+		font-size: 30px;
+	}
+	&-lg {
+		font-weight: 600;
+		font-size: 40px;
+	}
+}
+
+.text {
+	&-sm {
+		font-weight: 400;
+		font-size: 14px;
+	}
+	&-md {
+		font-weight: 400;
+		font-size: 18px;
+	}
+	&-lg {
+		font-weight: 400;
+		font-size: 24px;
+	}
+}
+
+.num {
+	&-sm {
+		font-size: 20px;
+	}
+	&-md {
+		font-weight: 600;
+		font-size: 24px;
+	}
+	&-lg {
+		font-size: 40px;
+	}
+}

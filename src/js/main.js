@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   function showTabContent(i = 0) {
-    tabsContent[i].style.display = 'block'
+    tabsContent[i].style.display = 'grid'
     tabs[i].classList.add('sidebar__item-active')
   }
 

@@ -1,3 +1,31 @@
 @use '../base/variables' as *;
 
+.dashboard {
+	height: 100%;
 
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto 1fr;
+	gap: 25px;
+	&__welcome {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		grid-column: 1 / -1;
+		grid-row: 1 / 2;
+	}
+	&__streak {
+			grid-column: 1 / -1;
+			grid-row: 2 / 3;
+
+			display: flex;
+			justify-content: space-around;
+		}
+	&__cards {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+}

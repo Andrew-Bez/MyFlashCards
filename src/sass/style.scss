@@ -2,5 +2,8 @@
 
 @use './base/basic.scss';
 
+@use './ui/title.scss';
+
 @use './blocks/sidebar.scss';
 @use './blocks/dashboard.scss';
+@use './blocks/words.scss';
