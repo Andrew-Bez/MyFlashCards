@@ -144,21 +144,10 @@
 					<input
 						class="words__input card"
 						type="text"
-						placeholder="Search words... "
+						placeholder="Search words..."
 					/>
 					<ul class="words__list card">
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
-						<li class="words__item">Hello / Привіт</li>
+						<!-- <li class="words__item"></li> -->
 					</ul>
 				</section>
 
@@ -183,22 +172,24 @@
 					</div>
 					<form action="add word" class="addWord__form card">
 						<div class="addWord__wrap-input">
-							<div class="addWord__input">
+							<div class="addWord__block">
 								<label for="english-word" class="text-lg">English word</label>
 								<input
+									name="word"
 									type="text"
 									id="english-word"
 									placeholder="Enter word"
-									class="addWord__input-eng"
+									class="addWord__input"
 								/>
 							</div>
-							<div class="addWord__input">
+							<div class="addWord__block">
 								<label for="translate-word" class="text-lg">Translate</label>
 								<input
+									name="translate"
 									type="text"
 									id="tranlsate-word"
 									placeholder="Enter translate"
-									class="addWord__input-translate"
+									class="addWord__input"
 								/>
 							</div>
 						</div>
