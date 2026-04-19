@@ -117,7 +117,7 @@
 			</nav>
 
 			<main class="main-content">
-				<section id="dashboard" class="dashboard tab-content">
+				<section id="dashboard" class="tab-content dashboard">
 					<div class="dashboard__welcome card">
 						<h2 class="title-md">Hello Andrew!!!</h2>
 						<p class="text-md">Welcome back to your learning journey</p>
@@ -140,7 +140,7 @@
 					</div>
 				</section>
 
-				<section id="words" class="words tab-content">
+				<section id="words" class="tab-content words">
 					<input
 						class="words__input card"
 						type="text"
@@ -162,7 +162,49 @@
 					</ul>
 				</section>
 
-				<section id="addWord" class="tab-content"></section>
+				<section id="addWord" class="tab-content addWord">
+					<div class="addWord__head card">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							width="28"
+							height="28"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<circle cx="12" cy="12" r="10"></circle>
+							<line x1="12" y1="8" x2="12" y2="16"></line>
+							<line x1="8" y1="12" x2="16" y2="12"></line>
+						</svg>
+						<h2 class="title-md">Add New Word</h2>
+					</div>
+					<form action="add word" class="addWord__form card">
+						<div class="addWord__wrap-input">
+							<div class="addWord__input">
+								<label for="english-word" class="text-lg">English word</label>
+								<input
+									type="text"
+									id="english-word"
+									placeholder="Enter word"
+									class="addWord__input-eng"
+								/>
+							</div>
+							<div class="addWord__input">
+								<label for="translate-word" class="text-lg">Translate</label>
+								<input
+									type="text"
+									id="tranlsate-word"
+									placeholder="Enter translate"
+									class="addWord__input-translate"
+								/>
+							</div>
+						</div>
+						<button class="addWord__btn button">Add new word</button>
+					</form>
+				</section>
 
 				<section id="study" class="tab-content"></section>
 

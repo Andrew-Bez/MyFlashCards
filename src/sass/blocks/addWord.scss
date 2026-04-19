@@ -1,0 +1,41 @@
+@use '../base/variables' as *;
+
+.addWord {
+	gap: 15px;
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+	}
+	&__wrap-input {
+		display: flex;
+		gap: 20px;
+	}
+	&__input {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		&-eng,
+		&-translate {
+			padding: 15px;
+			width: 100%;
+
+			color: $text-primary;
+			background-color: transparent;
+
+			border-radius: 10px;
+			border: 1px solid rgba($accent-pink, 0.5);
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
