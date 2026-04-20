@@ -4,7 +4,7 @@ import initTabs from './components/tabs'
 import initWordsList from './components/wordsList'
 
 window.addEventListener('DOMContentLoaded', () => {
-	initForm('.addWord__form')
 	initTabs()
-	initWordsList()
+	initWordsList('.words__list')
+	initForm('.addWord__form')
 })

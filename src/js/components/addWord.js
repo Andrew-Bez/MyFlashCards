@@ -1,21 +1,13 @@
+import { postData } from '../services/services'
+import initWordsList from './wordsList'
+
 export default function initForm(formSelector) {
 	const forms = document.querySelectorAll(formSelector)
 
-	const postData = async (url, data) => {
-		const res = await fetch(url, {
-			method: 'POST',
-			headers: {
-				'Content-type': 'application/json',
-			},
-			body: data,
-		})
-		return await res.json()
-	}
-
 	const message = {
-		loading: 'img/form/spinner.svg',
-		success: 'Word added ✅',
-		failure: 'Failed...',
+		loading: '../../../public/img/spinner.svg',
+		success: 'Add new word =)',
+		failure: 'Failed =(',
 	}
 
 	forms.forEach(item => {
@@ -36,10 +28,16 @@ export default function initForm(formSelector) {
 
 			const formData = new FormData(form)
 
-			const json = JSON.stringify(Object.fromEntries(formData.entries()))
+			const obj = Object.fromEntries(formData.entries())
+
+			obj.status = 'new'
+			obj.repetitions = 0
+
+			const json = JSON.stringify(obj)
 
 			postData('http://localhost:3000/words', json)
 				.then(data => {
+					initWordsList('.words__list')
 					console.log(data)
 					showThanksModal(message.success)
 					statusMessage.remove()

@@ -15,7 +15,7 @@ class WordsList {
 	}
 }
 
-async function renderList(parentSelector) {
+async function initWordsList(parentSelector) {
 	const parent = document.querySelector(parentSelector)
 
 	if (!parent) return
@@ -31,10 +31,8 @@ async function renderList(parentSelector) {
 			parent.appendChild(card.render())
 		})
 	} catch (error) {
-		console.error('Помилка завантаження товарів:', error)
+		console.error('Помилка завантаження слів:', error)
 	}
 }
 
-export default function initWordsList() {
-	renderList('.words__list')
-}
+export default initWordsList

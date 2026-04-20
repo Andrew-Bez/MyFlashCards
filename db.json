@@ -1,23 +1,4 @@
 {
-	"words": [
-		{
-			"id": "1",
-			"word": "contentment",
-			"translate": "задоволеність",
-			"status": "new"
-		},
-		{
-			"id": "2",
-			"word": "contentment",
-			"translate": "задоволеність",
-			"status": "learning"
-		},
-		{
-			"id": "3",
-			"word": "contentment",
-			"translate": "задоволеність",
-			"status": "learned"
-		}
-	],
+	"words": [],
 	"$schema": "./node_modules/json-server/schema.json"
 }
