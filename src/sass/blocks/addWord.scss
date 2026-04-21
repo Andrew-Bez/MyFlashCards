@@ -37,4 +37,16 @@
 			outline: none;
 		}
 	}
+	&__message {
+		display: none;
+		justify-self: center;
+		justify-content: center;
+
+		width: fit-content;
+		padding: 5px 10px;
+		border-radius: 5px;
+
+		color: $text-white;
+		background-color: rgba($accent-mint, 0.3);
+	}
 }

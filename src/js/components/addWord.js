@@ -5,9 +5,9 @@ export default function initForm(formSelector) {
 	const forms = document.querySelectorAll(formSelector)
 
 	const message = {
-		loading: '../../../public/img/spinner.svg',
-		success: 'Add new word =)',
-		failure: 'Failed =(',
+		loading: '/img/spinner.svg',
+		success: 'Success!!!',
+		failure: 'Failed...',
 	}
 
 	forms.forEach(item => {
@@ -24,6 +24,7 @@ export default function initForm(formSelector) {
 			display: block;
 			margin: 0 auto;
 			`
+
 			form.insertAdjacentElement('afterend', statusMessage)
 
 			const formData = new FormData(form)
@@ -39,15 +40,27 @@ export default function initForm(formSelector) {
 				.then(data => {
 					initWordsList('.words__list')
 					console.log(data)
-					showThanksModal(message.success)
 					statusMessage.remove()
+					showMessage(message.success)
 				})
-				.catch(() => {
-					showThanksModal(message.failure)
+				.catch(error => {
+					showMessage(message.failure)
 				})
 				.finally(() => {
 					form.reset()
 				})
 		})
+	}
+
+	function showMessage(message) {
+		const blockShowMessage = document.querySelector('.addWord__message')
+
+		blockShowMessage.style.display = 'flex'
+
+		blockShowMessage.innerHTML = `${message}`
+
+		setTimeout(() => {
+			blockShowMessage.style.display = 'none'
+		}, 3000)
 	}
 }

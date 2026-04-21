@@ -1,4 +1,152 @@
 {
-	"words": [],
-	"$schema": "./node_modules/json-server/schema.json"
+  "words": [
+    {
+      "word": "contentment",
+      "translate": "задоволеність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "WHIjHM1j2Lk"
+    },
+    {
+      "word": "worth",
+      "translate": "цінність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "rZuPlMGvTNw"
+    },
+    {
+      "word": "restless",
+      "translate": "неспокійний",
+      "status": "new",
+      "repetitions": 0,
+      "id": "75m1UqvOuBY"
+    },
+    {
+      "word": "clutter",
+      "translate": "безлад",
+      "status": "new",
+      "repetitions": 0,
+      "id": "NvVL_J1xv-A"
+    },
+    {
+      "word": "presence",
+      "translate": "присутність, зфокусованність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "4qiMmg1cfnA"
+    },
+    {
+      "word": "chase",
+      "translate": "гнатися",
+      "status": "new",
+      "repetitions": 0,
+      "id": "Bqy8TEB_vO0"
+    },
+    {
+      "word": "enough",
+      "translate": "достатьно",
+      "status": "new",
+      "repetitions": 0,
+      "id": "HXAmaAWXNUw"
+    },
+    {
+      "word": "burnout",
+      "translate": "вигорання",
+      "status": "new",
+      "repetitions": 0,
+      "id": "bmycfai_Xm0"
+    },
+    {
+      "word": "overthink",
+      "translate": "забагато думати",
+      "status": "new",
+      "repetitions": 0,
+      "id": "cT0u56kzZgg"
+    },
+    {
+      "word": "ruin",
+      "translate": "зруйнувати щось",
+      "status": "new",
+      "repetitions": 0,
+      "id": "tFcLUALDvvk"
+    },
+    {
+      "word": "dodge",
+      "translate": "швидко рухатись щоб уникати чогось",
+      "status": "new",
+      "repetitions": 0,
+      "id": "DY1WPVU4kOk"
+    },
+    {
+      "word": "potholes",
+      "translate": "метафора для проблем або перешкод",
+      "status": "new",
+      "repetitions": 0,
+      "id": "GiDs5ozkatc"
+    },
+    {
+      "word": "cruise",
+      "translate": "плавний та спокійний рух",
+      "status": "new",
+      "repetitions": 0,
+      "id": "wXExXNBF8bI"
+    },
+    {
+      "word": "loyal",
+      "translate": "зберігаючий вірність та підтримку",
+      "status": "new",
+      "repetitions": 0,
+      "id": "aPKRpEt9AGo"
+    },
+    {
+      "word": "guilt-free",
+      "translate": "без почуття вини",
+      "status": "new",
+      "repetitions": 0,
+      "id": "o63y5DNHDpc"
+    },
+    {
+      "word": "bottleneck",
+      "translate": "слабка точка",
+      "status": "new",
+      "repetitions": 0,
+      "id": "1uWbVj46NXU"
+    },
+    {
+      "word": "breaktrhough",
+      "translate": "прорив, велике покращення",
+      "status": "new",
+      "repetitions": 0,
+      "id": "3eCODMQawIM"
+    },
+    {
+      "word": "behavior ",
+      "translate": "поведінка",
+      "status": "new",
+      "repetitions": 0,
+      "id": "_sI2GKVtKsg"
+    },
+    {
+      "word": "bump",
+      "translate": "випадково вдарити чи врізатись",
+      "status": "new",
+      "repetitions": 0,
+      "id": "p-rcg_L636U"
+    },
+    {
+      "word": "sneak into",
+      "translate": "підкрастись",
+      "status": "new",
+      "repetitions": 0,
+      "id": "_2I25EOQzrY"
+    },
+    {
+      "word": "flexible",
+      "translate": "гнучкий",
+      "status": "new",
+      "repetitions": 0,
+      "id": "BYMjrPZBt7w"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
