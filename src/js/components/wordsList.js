@@ -29,6 +29,39 @@ class WordsList {
 	}
 }
 
+function showConfirm() {
+	return new Promise(resolve => {
+		const modal = document.querySelector('.words__confirm-modal'),
+			yesBtn = document.querySelector('.words__confirm-yes'),
+			noBtn = document.querySelector('.words__confirm-no'),
+			overlay = document.querySelector('.overlay')
+
+		overlay.style.display = 'block'
+		modal.style.display = 'flex'
+
+		const onYes = () => {
+			cleanUp()
+			resolve(true)
+		}
+
+		const onNo = () => {
+			cleanUp()
+			resolve(false)
+		}
+
+		function cleanUp() {
+			overlay.style.display = 'none'
+			modal.style.display = 'none'
+			yesBtn.removeEventListener('click', onYes)
+			noBtn.removeEventListener('click', onNo)
+		}
+
+		yesBtn.addEventListener('click', onYes)
+		noBtn.addEventListener('click', onNo)
+		overlay.addEventListener('click', onNo)
+	})
+}
+
 async function initWordsList(parentSelector) {
 	const parent = document.querySelector(parentSelector)
 
@@ -47,7 +80,7 @@ async function initWordsList(parentSelector) {
 	} catch (error) {
 		console.error('Помилка завантаження слів:', error)
 	}
-
+	console.log('listener added')
 	parent.addEventListener('click', async e => {
 		const deleteBtn = e.target.closest('.words__item-delete')
 
@@ -56,8 +89,8 @@ async function initWordsList(parentSelector) {
 		const item = deleteBtn.closest('.words__item')
 		const id = item.dataset.id
 
-		const confirmDelete = confirm('Delete this word?')
-		if (!confirmDelete) return
+		const confirmed = await showConfirm()
+		if (!confirmed) return
 
 		try {
 			await fetch(`http://localhost:3000/words/${id}`, {

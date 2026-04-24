@@ -1,41 +1,6 @@
 {
   "words": [
     {
-      "word": "contentment",
-      "translate": "задоволеність",
-      "status": "new",
-      "repetitions": 0,
-      "id": "WHIjHM1j2Lk"
-    },
-    {
-      "word": "worth",
-      "translate": "цінність",
-      "status": "new",
-      "repetitions": 0,
-      "id": "rZuPlMGvTNw"
-    },
-    {
-      "word": "restless",
-      "translate": "неспокійний",
-      "status": "new",
-      "repetitions": 0,
-      "id": "75m1UqvOuBY"
-    },
-    {
-      "word": "clutter",
-      "translate": "безлад",
-      "status": "new",
-      "repetitions": 0,
-      "id": "NvVL_J1xv-A"
-    },
-    {
-      "word": "presence",
-      "translate": "присутність, зфокусованність",
-      "status": "new",
-      "repetitions": 0,
-      "id": "4qiMmg1cfnA"
-    },
-    {
       "word": "chase",
       "translate": "гнатися",
       "status": "new",
@@ -146,6 +111,13 @@
       "status": "new",
       "repetitions": 0,
       "id": "BYMjrPZBt7w"
+    },
+    {
+      "word": "Ya lublu tebe",
+      "translate": "My love",
+      "status": "new",
+      "repetitions": 0,
+      "id": "zH9W859cpzU"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

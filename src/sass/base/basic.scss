@@ -68,6 +68,8 @@ body {
 }
 
 .main-content {
+	position: relative;
+
 	flex: 1;
 	min-width: 0;
 	background-color: $bg-panel;
@@ -86,4 +88,16 @@ body {
 	background-color: rgba($accent-pink, 0.15);
 	color: $accent-pink;
 	box-shadow: 0 0 0 2px rgba($accent-pink, 0.3);
+}
+
+.overlay {
+	position: absolute;
+	inset: 0;
+
+	border-radius: 24px;
+	backdrop-filter: blur(4px);
+	background-color: rgba(0, 0, 0, 0.7);
+
+	display: none;
+	z-index: 1000;
 }
