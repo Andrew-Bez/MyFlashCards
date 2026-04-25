@@ -113,11 +113,144 @@
       "id": "BYMjrPZBt7w"
     },
     {
-      "word": "Ya lublu tebe",
-      "translate": "My love",
+      "word": "contentment",
+      "translate": "задоволенність",
       "status": "new",
       "repetitions": 0,
-      "id": "zH9W859cpzU"
+      "id": "Fhzd8dnoJKA"
+    },
+    {
+      "word": "worth ",
+      "translate": "цінність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "fDqRjbFaxoA"
+    },
+    {
+      "word": "restless",
+      "translate": " неспокійний",
+      "status": "new",
+      "repetitions": 0,
+      "id": "XT3FEdrSfSs"
+    },
+    {
+      "word": "clutter",
+      "translate": "безлад",
+      "status": "new",
+      "repetitions": 0,
+      "id": "MsLe-RqoTe4"
+    },
+    {
+      "word": "presence",
+      "translate": "присутність, зфокусованність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "Pcn8NaF91cw"
+    },
+    {
+      "word": "reflect",
+      "translate": "відображати",
+      "status": "new",
+      "repetitions": 0,
+      "id": "IXART-cMpCE"
+    },
+    {
+      "word": "limitless",
+      "translate": "безмежний",
+      "status": "new",
+      "repetitions": 0,
+      "id": "RuRftMu8mgg"
+    },
+    {
+      "word": "science-backed",
+      "translate": "підтверджений наукою",
+      "status": "new",
+      "repetitions": 0,
+      "id": "I0CLxguJEtQ"
+    },
+    {
+      "word": "consistency",
+      "translate": "послідовність, регулярність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "5r9rhRXXQq0"
+    },
+    {
+      "word": "intention",
+      "translate": "намір",
+      "status": "new",
+      "repetitions": 0,
+      "id": "54safYEg6vk"
+    },
+    {
+      "word": "grounded",
+      "translate": "заземлений, емоційно стабільний",
+      "status": "new",
+      "repetitions": 0,
+      "id": "xUGzyRFq39s"
+    },
+    {
+      "word": "overwhelm",
+      "translate": "перевантажений",
+      "status": "new",
+      "repetitions": 0,
+      "id": "StEG_PHa9Y8"
+    },
+    {
+      "word": "awareness",
+      "translate": "усвідомленність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "NKYCLV5B38M"
+    },
+    {
+      "word": "hydrate",
+      "translate": "гідратація",
+      "status": "new",
+      "repetitions": 0,
+      "id": "26ZR3ucjcHY"
+    },
+    {
+      "word": "circadian rhytm",
+      "translate": "біоритм тіла",
+      "status": "new",
+      "repetitions": 0,
+      "id": "9ofnGBzixqo"
+    },
+    {
+      "word": "clarity",
+      "translate": "ясність розуму",
+      "status": "new",
+      "repetitions": 0,
+      "id": "zXezvsPM904"
+    },
+    {
+      "word": "momentum",
+      "translate": "імпульс",
+      "status": "new",
+      "repetitions": 0,
+      "id": "BOiTkexEL7g"
+    },
+    {
+      "word": "identity",
+      "translate": "ідентичність",
+      "status": "new",
+      "repetitions": 0,
+      "id": "rkqQhlU5M-A"
+    },
+    {
+      "word": "resilience",
+      "translate": "стійкість",
+      "status": "new",
+      "repetitions": 0,
+      "id": "9JWpEWgPjrM"
+    },
+    {
+      "word": "efforts",
+      "translate": "зусилля",
+      "status": "new",
+      "repetitions": 0,
+      "id": "yMR24Dcp32Y"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
