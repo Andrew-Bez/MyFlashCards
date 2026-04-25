@@ -1,15 +1,22 @@
 @use '../base/variables' as *;
 
 .button {
-  width: 200px;
-  padding: 10px;
+	width: 200px;
+	padding: 10px;
 
-  color: $text-primary;
-  border: 1px solid rgba($accent-pink, 0.5);
-  border-radius: 25px;
-  background-color: transparent;
-  &:hover {
-    color: black;
-    background-color:rgba($accent-pink, 0.3);
-  }
+	color: $text-primary;
+	border: 1px solid rgba($accent-pink, 0.5);
+	border-radius: 25px;
+	background-color: transparent;
+
+	transition: all 0.25s ease;
+	&:hover {
+		color: black;
+		background-color: rgba($accent-pink, 0.3);
+	}
+	&:disabled {
+		filter: blur(1px);
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
 }
