@@ -6,6 +6,8 @@ The application allows users to create and manage vocabulary, track learning pro
 
 ## Preview
 
+🔗 Live Demo: https://flash-cards-app-psi.vercel.app/
+
 ### Words Management
 
 ![MyFlashCards words list](./public/img/preview.png)
