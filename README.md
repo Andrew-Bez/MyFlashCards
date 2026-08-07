@@ -4,9 +4,10 @@ MyFlashCards is a responsive English vocabulary learning application built with 
 
 The application allows users to create and manage vocabulary, track learning progress and practise words through a weighted study mode.
 
-## Preview
+## LIVE
+🔗 Demo: https://flash-cards-app-psi.vercel.app/
 
-🔗 Live Demo: https://flash-cards-app-psi.vercel.app/
+## Preview
 
 ### Words Management
 
