@@ -1,6 +1,6 @@
 import { getResources, postData } from './services'
 
-const BASE_URL = 'http://localhost:3000/words'
+const BASE_URL = 'https://6a76062732ae11412784209c.mockapi.io/words'
 
 export const wordsApi = {
 	getWords() {
@@ -24,12 +24,14 @@ export const wordsApi = {
 	},
 
 	async updateWord(id, updatedData) {
+		const currentWord = await fetch(`${BASE_URL}/${id}`)
+
 		const res = await fetch(`${BASE_URL}/${id}`, {
-			method: 'PATCH',
+			method: 'PUT',
 			headers: {
 				'Content-Type': 'application/json',
 			},
-			body: JSON.stringify(updatedData),
+			body: JSON.stringify({ ...currentWord, ...updatedData }),
 		})
 
 		if (!res.ok) {
